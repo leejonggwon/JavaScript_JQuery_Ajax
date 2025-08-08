@@ -25,18 +25,17 @@
         console.log("console: Hello JavaScript!");
 
         //입력문 2가지
-        //1.사용자의 키보드값을 입력받는 함수
+        //1.prompt(): 사용자의 키보드값을 입력받는 함수
+        //            문자열로 반환
         let fruit = prompt("좋아하는 과일을 입력해주세요!");
         document.write(fruit);
-        alert(fruit);
+        alert("alert 함수 " + fruit);
         console.log(fruit);
 
-        //2
-        confirm();
-        
-        
-        
-        
+        //2.confirm(): 확인/취소를 입력받는 함수
+        //             논리형데이터로 반환(true/false)
+        let isCheck = confirm("confirm 함수: 회원정보변경을 하시겠습니까?"); //사용자에게 선택(확인/취소)을 요청한다
+        console.log(isCheck);
 
     </script>
     

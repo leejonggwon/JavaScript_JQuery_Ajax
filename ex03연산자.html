@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //연산자
+        //1.산술연산자 : + - * / %
+        //2.비교연산자 : == != > >= < <= === !==
+        //3.대입연산자 : = += -= *= /= &=
+        //4.논리연산자 : && || !
+        //5.증감연산자 : ++ --
+        //6.삼항연산자 : 조건식 ? true 일 때 : false일 때 
+        
+        // '/' 연산자: 나누기
+        // - 숫자가 나누어 떨어지지 않는 경우 결과값이 실수형태로 출력된다.
+        console.log(6/3);
+        console.log(5/2); //2.5 //실수형태
+
+        // ==(동등연산자) vs ===(일치연산자)
+        //JavaScrip 비교연산자의 특징!
+        // - 숫자 데이터와 문제열 데이터를 비교할때
+        //   문자열 데이터를 숫자로 자동형변환한다 
+        console.log(5 == 5);
+        console.log(5 == 3);
+        console.log(5 == "5"); //자료형이 다른데 true, "5"가 숫자 5로 자동형변환이 된다 
+        console.log(5 < "7"); 
+
+        console.log(3 === "3"); //자동형변환을 하지 않기 때문에, 데이터와 자료형 모두 비교한다  
+
+        // 비교연산을 직관적으로 인지할 수 있도록 변환해주는 것을 권장한다! 
+        console.log(2 < parseInt("3"));   //형변환 방법, 정수만 추출
+        console.log(2 < parseFloat("3")); //형변환 방법, 소수까지 추출
+        console.log(2 < Number("3"));     //전체가 숫자여야 변환 
+        console.log(2.2 < parseFloat("3.5"));
+        
+    </script>
+</body>
+</html>
