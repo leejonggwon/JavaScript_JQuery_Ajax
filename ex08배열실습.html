@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //배열 함수를 활용한 실습문제
+        let fruits = ["apple", "avocado", "banana", "blueberry", "cherry", "dragon fruit", 
+        "fig", "grape", "kiwi", "lime", "mango", "orange", "oriental melon", "pear",
+            "peach", "pineapple", "shine muscat", "strawberry", "tomato", 
+        "water melon", "yuja"];
+
+        console.log(fruits);
+        
+        //fruits의 마지막 아이템인 "yuja" 삭제하기 
+        fruits.pop();
+
+        //fruits에 "grapefruit" 추가하기
+        fruits.push("grapefruit");
+
+        //fruits에 "cherry tomato", "pine nut", "korean blackberry" 추가하기
+        //push()는 한 개 이상의 데이터를 추가 할 수 있다
+        fruits.push("cherry tomato", "pine nut", "korean blackberry");
+
+        //fruits에 "orange"가 있는지 확인하기
+        let orangeCheck = fruits.includes("orange");
+        console.log(orangeCheck);
+
+         //fruits에 "kiwi"가 있는지 확인하기
+        let kiwiCheck = fruits.includes("kiwi");
+        console.log(kiwiCheck);
+        
+        //fruits에 "water melon"을 "melon"로 변경하기
+        let waterMelonIndex = fruits.indexOf("water melon");
+        console.log(waterMelonIndex);
+        fruits[waterMelonIndex] = "melon";
+
+        console.log(fruits);
+        
+        //fruits에 "lime" 부터 3개의 아이템을 기존 배열에서 삭제하기 
+        let limeIndex = fruits.indexOf("lime");
+        console.log(limeIndex);
+
+        fruits.splice(limeIndex, 3);
+        console.log(fruits);
+
+        //fruits에 "shine muscat" 이후의 값을 제거하기
+        let shineMuscatIndex = fruits.indexOf("shine muscat");
+        console.log(shineMuscatIndex);
+        fruits.splice(shineMuscatIndex);
+
+        console.log(fruits);
+
+        //"p"로 시작되는 아이템은 "pear" 부터 "pineapple" 까지 가져와 새로운 배열에 저장하기
+        let pFruits = fruits.filter(item => item.startsWith('p'));
+        //filter의 역할은 조건에 맞는 데이터를 새 배열에 담는다
+        //item은 fruits에 있는 데이터를 비교를 위해 item에 넣는 매개변수 
+        //startsWith(): 특정 글자나 단어로 시작하는지 확인하는 함수 true, false를 반환
+        console.log(pFruits);
+        
+
+
+        //**화살표함수
+
+        //1.
+        let double = x => x * 2;
+        //console.log(double(4)); // 8
+
+        //2. 매개변수2개 
+        let add = (a, b) => a + b;
+        //console.log(add(3, 5)); // 8
+        
+        //3. 중괄호 {} 쓰면 반드시 return을 적어줘야 함
+        let greet = (name) => {
+            let message = "Hello " + name;
+            return message;
+        }
+        //console.log(greet("Tom")); // Hello Tom
+
+        
+        
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
