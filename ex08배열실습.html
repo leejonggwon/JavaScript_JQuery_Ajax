@@ -69,16 +69,22 @@
         let double = x => x * 2;
         //console.log(double(4)); // 8
 
-        //2. 매개변수2개 
+        //2. 매개변수2개 이면 괄호를 쓴다
         let add = (a, b) => a + b;
         //console.log(add(3, 5)); // 8
+
+        //3. 매개변수 없는 화살표 함수
+        let sayHello = () => "Hello World";
         
-        //3. 중괄호 {} 쓰면 반드시 return을 적어줘야 함
+        //4. 중괄호 {} 쓰면 반드시 return을 적어줘야 함
         let greet = (name) => {
             let message = "Hello " + name;
             return message;
         }
         //console.log(greet("Tom")); // Hello Tom
+
+        
+
 
         
         

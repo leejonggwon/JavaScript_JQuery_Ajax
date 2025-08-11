@@ -16,16 +16,73 @@
         // - 함수 호이스팅: 함수를 코드 맨 위로 끌어올려서 실행하는 것처럼 동작한다
         //                함수 선언을 코드 제일 위로 옮겨서 실행하는 것처럼 작동한다 
         //                 그러므로 함수를 선언하기 전에 호출해도 문제가 없다 
-        intro(); 
+        //intro(); 
+
+        //전역변수선언&초기화
+        let msg2 = "전역변수!";
+
 
         function intro() {
             console.log("intro()함수가 실행되었습니다!");
             document.writeln("intro()함수가 실행되었습니다!<br>");
+
+
+            //지역변수선언&초기화
+            let msg = "지역변수!";
+            console.log(msg);
+            document.writeln(msg);
+
+            console.log(msg2);
+            document.writeln(msg2 + "<br>");
+            
         }    
+        //msg는 intro()의 지역변수이기 때문에 함수 비깥쪽에서 사용이 불가능하다!
+        //console.log(msg);
+        //document.writeln(msg);
+        
 
         //함수호출
-        //intro();
+        intro();
 
+        //2. 함수표현식
+        // - 함수표현식은 함수 호이스팅이 발생하지 않는다!
+
+        //intro2(); //함수를 변수에 저장하기 전에 사용하는 것을 불가능하다 
+
+        let intro2 = function () { //익명함수형태
+            console.log("함수표현식 실행!");
+            document.writeln("함수표현식 실행! <br>");
+        }
+
+        intro2();
+
+        //3.화상표함수(함수간략화버전)
+        let intro3 = () =>{
+            console.log("화살표함수 실행!");
+            document.writeln("화살표함수 실행! <br>");
+        }
+
+        intro3();     
+
+
+        //즉시 실행함수 
+        (function() {
+            document.writeln("즉시 실행됨! <br>");
+        })();
+
+
+        //화살표 즉시 실행함수
+        (() => {
+            document.writeln("화살표 즉시 실행함수! <br>");
+        })();
+
+
+        let result = (function() {
+            let temp = 2+3;
+            return temp;
+        })();
+
+         document.writeln(result); //5
 
     </script>
 </body>
