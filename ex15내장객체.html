@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Data 내장객체 실습
+        let date = new Date();
+        //let date = new Date("2023-07-20"); //날짜를 정의할 수 있다 
+       
+
+        let year = date.getFullYear();
+        let month = date.getMonth() +1; //시작숫자가 0이다
+        let day = date.getDate();
+        date.getDay(); //요일을 숫자로 반환한다 0(일요일) ~ 6(토요일) 
+
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        let seconds = date.getSeconds();
+
+    
+        console.log(date);
+        console.log(`${year}년 ${month}월 ${day}일`);
+        console.log(`${hour}시 ${minute}분 ${seconds}초`);
+
+
+         
+         
+        //날짜를 직접 지정해서 Date 객체를 만드는 것은, 특정 날짜·시간을 다뤄야 할 때 사용한다
+        //1. 과거 날짜나 미래 날짜 계산
+        let eventDate = new Date("1988-03-28");
+        let today = new Date();
+
+        let diff = today - eventDate; // 밀리초 차이
+        console.log(diff / (1000 * 60 * 60 * 24) + "일 지남");
+
+        //2.예약, 마감일, 기념일 관리
+        //예: 쇼핑몰에서 "배송 예정일", "할인 종료일" 표시
+        let deadline = new Date("2025-12-31");
+        console.log("마감일:", deadline.toDateString()); //마감일: Wed Dec 31 2025
+        console.log("마감일:", deadline.toLocaleDateString()); //2025. 12. 31
+        console.log(deadline.toLocaleDateString("en-US")); //12/31/2025
+        console.log(deadline.toLocaleDateString("ko-KR")); //2025. 12. 31.
+        console.log(deadline.toLocaleDateString("fr-FR")); //31/12/2025
+
+
+    
+    
+        
+
+    </script>
+</body>
+</html>

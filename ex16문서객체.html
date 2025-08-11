@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="msg"> 오늘 날씨는?</h1>
+    
+    <div id="msg2">
+        오늘 점심은?
+        <p>오늘은 점심은 1번 돈까스</p>
+        <p>오늘은 점심은 2번 국밥</p>
+    </div>
+    
+
+    <script>
+        //HTML 문서 내 태그를 제어하려면 가장 먼저 해야 하는 것은 → HTML 객체에 접근이다 
+        //document: 현재 HTML문서
+        //.getElementById("msg"): id가 "msg"인 HTML객체를 접근
+        const mag = document.getElementById("msg"); //HTML 문서 안에서 id가 "msg"인 요소를 찾아서 변수 mag에 저장
+        console.log("접근한 객체:"+ msg); //[object HTMLHeadingElement] 타입출력
+        console.log("접근한 객체:", msg);
+        
+        //HTML객체.innerText : HTML태그의 컨텐츠를 문자열로 반환하는 속성
+        console.log(msg.innerText); // HTML 요소(element)의 화면에 보이는 텍스트 내용을 읽거나 변경할 때 사용하는 속성
+        
+        console.log(mag.innerHTML);
+        msg.innerText = "<a href='#'>오늘 날씨 맑음</a>";  //msg 요소 안의 글자 내용을 바꾼다 → 브라우저 화면에 보여지는 텍스트가 변경된다
+                                                                //태그를 인식하지 않는다, 해당 태그의 내용을 변경할떄 사용한다 
+
+        //mag.innerHTML = "<a href='#'>오늘 날씨 흐림</a>"; //HTML 태그로 인식해 실제 요소로 렌더링된다
+                                                                  //해당 태그의 내용과 태그를 적용할 떄 사용한다 
+
+
+        const msg2 = document.getElementById("msg2");
+        
+        //id가 "msg2"인 HTML객체의 내용을 접근해보기
+        console.log(msg2.innerText);
+        console.log(msg2.innerHTML); //innerHTML은 해당 요소 안에 들어있는 HTML 태그와 내용을 포함한 모든 것을 문자열로 반환해.
+                                     //그래서 <p>...</p> 같은 태그들도 문자열 그대로 출력된다
+
+
+        //document.querySelector: <div id="msg2"> 안에 있는 <p> 태그를 접근하려면
+        const pElem = document.querySelector("#msg2 p");
+        console.log(pElem.innerText); //오늘은 점심은 1번 돈까스
+
+        pElem.innerHTML = "오늘 점심은 1번 쌈밥 어때요?"; //수정하였음 
+
+
+        //document.querySelectorAll: <div id="msg2"> 안에 있는 모든 <p> 태그를 접근하려면
+        const pElems = document.querySelectorAll("#msg2 p");
+        pElems.forEach(i => {
+            console.log(i.innerText);
+        });
+
+
+        
+
+       
+
+        
+
+
+
+    </script>
+</body>
+</html>
