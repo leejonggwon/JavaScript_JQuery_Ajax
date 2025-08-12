@@ -35,7 +35,28 @@
 
         let createList =()=>{
             const list = document.getElementById("list");
-            list.innerHTML = "<ol> <li><a href='https://www.google.com'>구글</a></li> <li><a href='https://www.naver.com'>네이버</a></li> <li><a href='https://www.daum.net'>다음</a></li> </ol>";
+
+        //배열 데이터를 HTML 태그(<ul>, <li>)와 결합하여 화면에 표시하는 예제 
+        //많은 양의 데이터를 반복문을 통해서 생성하는 방법 
+        let arr = ["HTML", "CSS", "JS"];        
+        let resultHTML = `<ul>`;
+        
+        for (let i = 0; i < arr.length; i++) {
+            resultHTML += `<li>${arr[i]}</li>`; //문자열 누적 
+        }    
+        resultHTML += `</ul>`;
+
+        list.innerHTML = resultHTML;
+
+
+        // list.innerHTML =`
+        //     <ul> 
+        //         <li>HTML</li> 
+        //             <li>CSS</li> 
+        //         <li>JS</li> 
+        //     </ul>
+        // `;
+
         }
 
     </script>

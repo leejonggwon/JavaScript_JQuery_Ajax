@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <span id="icon">😐</span> <span id="like">0</span>
+    </div>
+    
+
+    <button onclick="clicKLike()">좋아요</button>
+    <button onclick="clickDislike()">싫어요</button>
+ 
+    <script>
+        //실습문제) 버튼을 눌렀을 때 숫자가 변경되는 함수를 구현하시오.
+        // 1) 좋아요 버튼을 클릭: 숫자가 1씩 증가
+        // 2) 싫어요 버튼을 클릭: 숫자가 1씩 감소
+
+        //프로세스
+        //1. 버튼을 클릭한다.
+        //2. 슷자가 증가된다.
+        // - 버튼을 클릭했을 때 동작하는 함수를 생성
+        // - id가 'like'인 HTML 객체에 접근  
+        // - innerText를 활용해서 증가된 숫자를 적용한다
+
+        let clicKLike = () =>{
+            const like = document.getElementById("like");
+            const icon = document.getElementById("icon");
+
+            let count = parseInt(like.innerText);
+            count += 1;
+            like.innerText = count;
+            
+            if(count > 0 && count < 10){
+                icon.innerHTML = "😊";
+            }else if(count >= 10){
+                icon.innerHTML = "🥰";
+            }else if (count < 0 && count >= -9) {
+                icon.innerHTML = "😡";
+            }else if (count == 0) {
+                icon.innerHTML = "😐";
+            }
+    }
+
+        let clickDislike = ()=>{
+            const like = document.getElementById("like"); 
+            const icon = document.getElementById("icon");
+
+            let count = parseInt(like.innerText);
+            count -= 1;
+            like.innerText = count;
+
+            if(count < 0 && count >= -9){
+                icon.innerHTML = "😡";
+            }else if(count <= -10){
+                icon.innerHTML = "🤬";
+            }else if (count > 0 && count < 10) {
+                icon.innerHTML = "😊";
+            }else if (count == 0) {
+                icon.innerHTML = "😐";
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

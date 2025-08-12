@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span onclick="clickLike()">👍</span><span id="like">0</span>
+      
+        <span onclick="clickDislike()">👎</span><span id="disLike">0</span>
+    </div>
+
+<script>
+    let clickLike= () =>{
+        const like = document.getElementById("like");
+
+        let count = parseInt(like.innerText);
+            count += 1;
+            like.innerText = count;
+    }
+
+    let clickDislike= () =>{
+        const like = document.getElementById("disLike");
+
+        let count = parseInt(like.innerText);
+            count += 1;
+            like.innerText = count;
+    }
+
+
+</script>    
+</body>
+</html>
