@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">클래스네임1</div>
+    <div class="box">클래스네임2</div>
+    <div class="box">클래스네임3</div>
+
+
+    <p>태그네임1</p>
+    <p>태그네임2</p>
+    <p>태그네임3</p>
+
+
+    <div>
+        <p class="text">쿼리셀렉토1</p>
+        <p class="text">쿼리셀렉토2</p>
+    </div>
+
+
+    <ul>
+        <li class="item">쿼리셀렉토올1</li>
+        <li class="item">쿼리셀렉토올2</li>
+        <li class="item">쿼리셀렉토올3</li>
+    </ul>
+
+    
+    <script>
+
+        //1.getElementsByClassName(className) 예시
+        const boxes = document.getElementsByClassName("box");
+        boxes[0].style.backgroundColor = "yellow";
+        boxes[0].innerHTML = "노랑색 클래스네임";
+
+
+        //2.getElementsByTagName(tagName) 예시
+        const paragraphs = document.getElementsByTagName("p");
+        paragraphs[0].innerHTML = "수정한 태그네임";
+
+        for (let i = 0; i < paragraphs.length; i++) {
+             paragraphs[i].style.fontSize = "20px";
+        }
+
+        //3.querySelector(selector)
+        const firstText = document.querySelector(".text");
+        firstText.style.textShadow = "0px 12px 5px gray"; //오른쪽 아래 반경 색
+
+
+        //4.querySelectorAll(selector)
+        const item = document.querySelectorAll("li"); //클래스 선택할 땐 → . 아이디 선택할 땐 → #  태그 이름 선택할 땐 → 태그명만 (예: div, p)
+        item.forEach(i => {
+            i.style.backgroundColor = "pink";
+        })
+
+
+    </script>
+</body>
+</html>

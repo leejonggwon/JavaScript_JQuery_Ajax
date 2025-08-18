@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>입력요소의 데이터 접근하기2</h1>
+
+    <input type="text" id="user-input" value="기본값"><br>
+    <input type="checkbox" id="agree" checked> 약관 동의<br>
+    <input type="radio" name="color" value="red"> 빨강
+    <input type="radio" name="color" value="blue" checked> 파랑
+    <input type="radio" name="color" value="green"> 초록<br>
+    <button id="btn">확인</button>
+    <p id="msg"></p>
+    
+<script>
+
+    const userInput = document.getElementById("user-input");
+    const agree = document.getElementById("agree");
+    const colors = document.getElementsByName("color");
+    const btn = document.getElementById("btn");
+    const msg = document.getElementById("msg");
+    
+btn.addEventListener("click", function() {
+    // 텍스트 input → .value
+    let textValue = userInput.value;
+
+    // 체크박스 → .checked (true/false)
+    let isAgree = agree.checked;
+
+    // 라디오 버튼 → 체크된 것만 찾아서 .value
+    let selectedColor = "";
+    for (let c of colors) {
+        if (c.checked) { //checked: 체크되어 있는지 여부(true, false)를 나타낸다
+            selectedColor = c.value;
+        }
+    }
+
+    msg.innerHTML = `
+        입력한 텍스트: ${textValue}<br>
+        약관 동의 여부: ${isAgree}<br>
+        선택한 색상: ${selectedColor}
+    `;
+});
+
+        
+    </script>
+</body>
+</html>
