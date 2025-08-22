@@ -1,5 +1,5 @@
 ### ex18문서객체실습
- 좋아요/싫어요 버튼을 통한 이벤트 처리 및 DOM 조작 실습
+좋아요/싫어요 버튼을 통한 이벤트 처리 및 DOM 조작 실습
 <br>
 #### 1. 이벤트 처리 (onclick 속성)
 ▪ 버튼 클릭 시 함수(clicKLike, clickDislike)가 실행되도록 설정
@@ -11,8 +11,17 @@
 ▪ 문자열로 저장된 숫자를 parseInt 로 정수 변환
 ▪ 조건문을 활용해 숫자 범위별로 아이콘 변경
 
-<img width="881" height="311" alt="ex18문서객체실습" src="https://github.com/user-attachments/assets/bd789bee-2b4b-4da1-9fc3-ae7ab4fb25f1" />
-<img width="882" height="317" alt="ex18문서객체실습2" src="https://github.com/user-attachments/assets/6e0465a4-16b7-4fc0-aed0-03a971c4202b" />
+<!-- 이미지 2장 가로 배치 -->
+<div style="display: flex; justify-content: space-around; margin-top: 20px;">
+  <div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/bd789bee-2b4b-4da1-9fc3-ae7ab4fb25f1" alt="사진1" style="width: 40%; height: auto;">
+    <hr style="margin-top: 10px; border: 1px solid #ccc;">
+  </div>
+  <div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/6e0465a4-16b7-4fc0-aed0-03a971c4202b" alt="사진2" style="width: 40%; height: auto;">
+    <hr style="margin-top: 10px; border: 1px solid #ccc;">
+  </div>
+</div>
 
 
 
