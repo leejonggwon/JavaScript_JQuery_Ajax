@@ -1,4 +1,9 @@
-### ex18문서객체실습
+## ex18문서객체실습
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 20px;">
+  <img src="https://github.com/user-attachments/assets/bd789bee-2b4b-4da1-9fc3-ae7ab4fb25f1" alt="사진1" style="width: 45%; height: auto;">
+  <img src="https://github.com/user-attachments/assets/6e0465a4-16b7-4fc0-aed0-03a971c4202b" alt="사진2" style="width: 45%; height: auto;">
+</div>
+
 좋아요/싫어요 버튼을 통한 이벤트 처리 및 DOM 조작 실습
 <br>
 #### 1. 이벤트 처리 (onclick 속성)
@@ -10,18 +15,46 @@
 #### 3. 데이터 처리 (parseInt, 조건문 if/else)
 ▪ 문자열로 저장된 숫자를 parseInt 로 정수 변환
 ▪ 조건문을 활용해 숫자 범위별로 아이콘 변경
+<br>
 
-<!-- 이미지 2장 가로 배치 -->
-<div style="display: flex; justify-content: space-around; margin-top: 20px;">
-  <div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/bd789bee-2b4b-4da1-9fc3-ae7ab4fb25f1" alt="사진1" style="width: 40%; height: auto;">
-    <hr style="margin-top: 10px; border: 1px solid #ccc;">
-  </div>
-  <div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/6e0465a4-16b7-4fc0-aed0-03a971c4202b" alt="사진2" style="width: 40%; height: auto;">
-    <hr style="margin-top: 10px; border: 1px solid #ccc;">
-  </div>
-</div>
+
+
+## ex19문서객체실습
+<img width="1710" height="717" alt="ex19 로또번호생성_ 실습용" src="https://github.com/user-attachments/assets/b9a85fc1-af96-48ef-8447-943b032a4f40" />
+
+랜덤으로 생성한 데이터를 화면에 출력하는 이벤트 처리 및 DOM 조작 실습, 로또번호생성 실습
+<br>
+
+#### 1. 입력 값 접근
+▪ input.value 로 사용자가 입력한 값 가져오기
+#### 2. DOM 조작
+▪ 가져온 값을 innerHTML 로 특정 태그(p)에 출력하기
+#### 3. 이벤트 활용
+▪ onclick, keyup, mouseover 등 다양한 이벤트를 연결해 동작 제어
+▪ addEventListener 로 이벤트 등록하기
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
