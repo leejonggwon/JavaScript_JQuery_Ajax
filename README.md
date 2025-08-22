@@ -1,12 +1,22 @@
-## 작품명: 세이브더캠퍼즈 
-## 팀명: 스마트캠퍼즈
-
-### 1. 작품제목 
- 캠핑장 이용객의 안전을 위한 IoT 기반 안전박스 및 관리자 시스템
+### ex18문서객체실습
+ 좋아요/싫어요 버튼을 통한 이벤트 처리 및 DOM 조작 실습
 <br>
-### 2. 제안내용 
-▪ 개발 목표
- ###### 캠핑장 이용객의 안전한 환경을 위해 다양한 IoT 센서를 활용하여 안전 관리 서비스를 제공
+#### 1. 이벤트 처리 (onclick 속성)
+▪ 버튼 클릭 시 함수(clicKLike, clickDislike)가 실행되도록 설정
+#### 2. DOM 조작 (getElementById, innerText, innerHTML)
+▪ document.getElementById 로 HTML 요소(like, icon)에 접근
+▪ innerText 로 숫자를 읽고 증가/감소
+▪ innerHTML 로 이모지(아이콘)를 변경
+#### 3. 데이터 처리 (parseInt, 조건문 if/else)
+▪ 문자열로 저장된 숫자를 parseInt 로 정수 변환
+▪ 조건문을 활용해 숫자 범위별로 아이콘 변경
+
+<img width="881" height="311" alt="ex18문서객체실습" src="https://github.com/user-attachments/assets/bd789bee-2b4b-4da1-9fc3-ae7ab4fb25f1" />
+<img width="882" height="317" alt="ex18문서객체실습2" src="https://github.com/user-attachments/assets/6e0465a4-16b7-4fc0-aed0-03a971c4202b" />
+
+
+
+ 
 
 ▪ 개발 내용
    ###### 일산화탄소 및 화재감지, 유해가스 센서, 온도 및 습도 센서 등을 활용하여 비상황 발생 시 사용자에게 LCD 화면과 스피커를 통해 위험 상황을 즉시 전달하고 관리자가 대응 할 수 있도록함에 있음
