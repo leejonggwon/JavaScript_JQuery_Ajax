@@ -16,8 +16,8 @@
 ▪ 문자열로 저장된 숫자를 parseInt 로 정수 변환
 ▪ 조건문을 활용해 숫자 범위별로 아이콘 변경
 <br>
-
-
+<br>
+<br>
 
 ## ex19문서객체실습
 <img width="1710" height="717" alt="ex19 로또번호생성_ 실습용" src="https://github.com/user-attachments/assets/b9a85fc1-af96-48ef-8447-943b032a4f40" />
