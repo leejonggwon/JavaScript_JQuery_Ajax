@@ -96,22 +96,28 @@ JSON + jQuery를 활용한 AJAX, DOM 조작, 이벤트 처리 실습
 <br>
 
 ## ex22카카오지도
-<img src="https://github.com/user-attachments/assets/ba60e94a-ac53-44de-a67a-33d3876fb68c"
-     alt="가위바위보게임_실습용" 
-     style="width: 600px; height: auto;" />
 
-버튼 클릭 시 유저와 컴퓨터가 랜덤하게 가위·바위·보를 선택하고, 승패를 비교해 결과와 스타일을 동적으로 출력하는 실습
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <img src="https://github.com/user-attachments/assets/e0e31acf-027b-4493-80eb-b530bba0a95b" 
+       alt="ex22카카오지도" 
+       style="width: 300px; height: auto;" />
+       
+  <img src="https://github.com/user-attachments/assets/7d30898b-ead6-4174-aeb5-94dc1a67ead8" 
+       alt="ex23카카오지도 여러개마커출력" 
+       style="width: 300px; height: auto;" />
+</div>
+
+
 <br>
 <br>
-#### 1. Play 버튼 클릭 → 유저와 컴퓨터가 Math.random() 으로 랜덤하게 "가위, 바위, 보" 선택
-#### 2.결과 비교 → 승/패/무승부를 판별 (if문 + 삼항연산자 활용)
-▪ document.getElementById 로 HTML 요소(like, icon)에 접근
-▪ innerText 로 숫자를 읽고 증가/감소
-▪ innerHTML 로 이모지(아이콘)를 변경
-#### 3.화면 출력
-▪ 선택한 값을 이미지로 표시 (innerHTML에 <img> 삽입)
-▪ 결과(win/lose/tie)를 텍스트로 표시
-▪ CSS 클래스(.win, .lose, .tie)를 동적으로 적용해 테두리 색상 변경
+#### 1. 목적
+▪ 카카오맵 API를 활용하여 지도 위에 마커를 표시하고, 마커와 인포윈도우에 이벤트를 등록하는 방법을 실습
+#### 2.주요 학습 포인트
+▪ 마커생성하기
+▪ 마커에 인포윈도우 표시하기
+▪ 마커에 이벤트 등록하기
+▪ 여러개 마커에 이벤트 등록하기
+
 
 <br>
 
