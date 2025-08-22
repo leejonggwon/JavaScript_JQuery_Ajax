@@ -97,15 +97,14 @@ JSON + jQuery를 활용한 AJAX, DOM 조작, 이벤트 처리 실습
 
 ## ex22카카오지도
 
-<div style="display: flex; justify-content: center; gap: 20px;">
+<p align="center">
   <img src="https://github.com/user-attachments/assets/e0e31acf-027b-4493-80eb-b530bba0a95b" 
        alt="ex22카카오지도" 
-       style="width: 300px; height: auto;" />
-       
+       width="300" />
   <img src="https://github.com/user-attachments/assets/7d30898b-ead6-4174-aeb5-94dc1a67ead8" 
        alt="ex23카카오지도 여러개마커출력" 
-       style="width: 300px; height: auto;" />
-</div>
+       width="300" />
+</p>
 
 
 <br>
