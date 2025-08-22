@@ -18,7 +18,7 @@
 <br>
 <br>
 
-## ex19문서객체실습
+## 로또번호생성_ 실습용
 <img width="1710" height="717" alt="ex19 로또번호생성_ 실습용" src="https://github.com/user-attachments/assets/b9a85fc1-af96-48ef-8447-943b032a4f40" />
 
 랜덤으로 생성한 데이터를 화면에 출력하는 이벤트 처리 및 DOM 조작 실습, 로또번호생성 실습
