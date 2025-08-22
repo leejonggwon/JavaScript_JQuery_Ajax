@@ -1,8 +1,12 @@
 ## ex18문서객체실습
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 20px;">
-  <img src="https://github.com/user-attachments/assets/bd789bee-2b4b-4da1-9fc3-ae7ab4fb25f1" alt="사진1" style="width: 45%; height: auto;">
-  <img src="https://github.com/user-attachments/assets/6e0465a4-16b7-4fc0-aed0-03a971c4202b" alt="사진2" style="width: 45%; height: auto;">
-</div>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bd789bee-2b4b-4da1-9fc3-ae7ab4fb25f1" 
+       alt="사진1" 
+       width="300" />
+  <img src="https://github.com/user-attachments/assets/6e0465a4-16b7-4fc0-aed0-03a971c4202b" 
+       alt="사진2" 
+       width="300" />
+</p>
 
 좋아요/싫어요 버튼을 통한 이벤트 처리 및 DOM 조작 실습
 <br>
@@ -21,9 +25,11 @@
 
 
 ## 로또번호생성_ 실습용
-<img src="https://github.com/user-attachments/assets/4a97f082-b835-4464-adb2-5517ca62f8b9" 
-     alt="로또번호생성실습" 
-     style="width: 600px; height: auto;" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4a97f082-b835-4464-adb2-5517ca62f8b9" 
+       alt="로또번호생성실습" 
+       width="600" />
+</p>
 
 <br>
 <br>
@@ -42,9 +48,11 @@
 <br>
 
 ## 가위바위보게임_실습용
-<img src="https://github.com/user-attachments/assets/58cd114e-2513-4b44-a9bb-a5cf38e2203c" 
-     alt="가위바위보게임_실습용" 
-     style="width: 600px; height: auto;" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/58cd114e-2513-4b44-a9bb-a5cf38e2203c" 
+       alt="가위바위보게임_실습용" 
+       width="600" />
+</p>
 
 버튼 클릭 시 유저와 컴퓨터가 랜덤하게 가위·바위·보를 선택하고, 승패를 비교해 결과와 스타일을 동적으로 출력하는 실습
 <br>
@@ -62,12 +70,14 @@
 <br>
 
 ## ex21Ajax
-<div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+<p align="center">
   <img src="https://github.com/user-attachments/assets/c40707f2-b3c4-4d89-888f-d25f2326ae87" 
-       alt="ex21" style="width: 200px; height: auto;" />
+       alt="ex21" 
+       width="200" />
   <img src="https://github.com/user-attachments/assets/1add62cc-8573-47c0-9c20-263679fd53bb" 
-       alt="ex21-1" style="width: 200px; height: auto;" />
-</div>
+       alt="ex21-1" 
+       width="200" />
+</p>
 
 JSON + jQuery를 활용한 AJAX, DOM 조작, 이벤트 처리 실습
 <br>
@@ -106,18 +116,17 @@ JSON + jQuery를 활용한 AJAX, DOM 조작, 이벤트 처리 실습
        width="300" />
 </p>
 
-
-<br>
-<br>
 #### 1. 목적
 ▪ 카카오맵 API를 활용하여 지도 위에 마커를 표시하고, 마커와 인포윈도우에 이벤트를 등록하는 방법을 실습
+
 #### 2.주요 학습 포인트
 ▪ 마커생성하기
 ▪ 마커에 인포윈도우 표시하기
 ▪ 마커에 이벤트 등록하기
 ▪ 여러개 마커에 이벤트 등록하기
 
-
+<br>
+<br>
 <br>
 
 
