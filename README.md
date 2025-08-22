@@ -60,7 +60,6 @@
 ▪ CSS 클래스(.win, .lose, .tie)를 동적으로 적용해 테두리 색상 변경
 
 <br>
-<br>
 
 ## ex21Ajax
 <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
